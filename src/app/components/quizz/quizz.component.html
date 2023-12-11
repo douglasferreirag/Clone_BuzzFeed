@@ -5,27 +5,29 @@
 
         <img src="assets/imgs/logo.png" alt="" srcset="">
 
-        <h3>Título</h3>
+        <h3>{{title}}</h3>
 
     </div>
 
     <div class="quizz_questions">
 
-        <h3>questão selecionada</h3>
+        <h3>{{questionSelected.question}}</h3>
 
     </div>
 
     <div class="quizz_options">
 
-        <button class = "btn-option">
+       <button class="btn-option">
 
-            optionname 
-        </button>
+            optionname
+
+
+       </button>
 
 
     </div>
 
-    <div class="quizz_results">
+    <div *ngIf=finished  class="quizz_results">
 
         <h1> O seu resultado é: </h1>
 
